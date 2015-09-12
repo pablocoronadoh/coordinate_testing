@@ -3,6 +3,10 @@ body {
 	background-size: 100% auto;
 	background-color: #e5e8e6;
 }
+
+/**********
+HEADER
+***********/
 header {
 	padding: 65px 0 35px;
 }
@@ -34,6 +38,10 @@ header h1 {
 	text-align: center;
 }
 
+
+/**********
+INTRO
+***********/
 .intro {
 	padding: 20px 0;
 	text-align: center;
@@ -57,6 +65,10 @@ header h1 {
 .intro ul {
 	list-style: none;
 }
+.intro .left-intro,
+.intro .right-intro {
+	padding: 30px 0;
+}
 .intro .left-intro h3,
 .intro .right-intro h3 {
 	font-size: 18px;
@@ -64,12 +76,26 @@ header h1 {
 	text-transform: uppercase;
 	letter-spacing: 3px;
 }
-.intro .right-intro ul {
+.intro .right-intro ul,
+.intro .left-intro ol {
 	font-size: 14px;
+	padding-left: 0;
+	text-align: left;
+}
+.intro .left-intro ol {
+	padding-right: 40px;
+}
+.intro .right-intro ul {
+	padding-left: 40px;
 }
 
+
+/**********
+SIMPLE CALL TO ACTION
+***********/
 .cta {
 	padding: 45px 0;
+	background: rgba(255,255,255, 0.3);
 }
 .cta .btn.btn-info {
 	background: #3398db;
@@ -83,6 +109,143 @@ header h1 {
 	border-bottom: 3px solid #2672A4;
 }
 
+
+/**********
+METHODOLOGY
+***********/
+.methodology {
+	padding: 40px 0;
+}
+.methodology h3 {
+	font-size: 18px;
+	color: #237cc6;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	padding: 10px 0;
+	text-align: center;
+}
+.methodology p {
+	font-size: 16px;
+	color: #313131;
+	text-align: center;
+}
+.methodology h5 {
+	font-size: 16px;
+	font-weight: bold;
+	color: #237cc6;
+	border: 2px solid #237cc6;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	padding: 5px 9px;
+}
+.methodology h4 {
+	color: #237cc6;
+	font-weight: bold;
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+.methodology .steps {
+	color: #313131;
+	font-size: 15px;
+	text-align: left;
+}
+
+
+/**********
+TEAM
+***********/
+.team {
+	padding: 40px 0 50px;
+}
+.team h3 {
+	font-size: 18px;
+	color: #237cc6;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	padding: 10px 0;
+	text-align: center;
+}
+.team p {
+	font-size: 16px;
+	color: #313131;
+	text-align: center;
+}
+.team img,
+.team h4 {
+	display: inline-block;
+}
+.team img {
+	padding: 10px 0;
+}
+.team h4 {
+	font-size: 15px;
+	font-weight: normal;
+	margin-left: 15px;
+}
+
+
+/**********
+CALL TO ACTION BLOCK
+***********/
+.cta-block {
+	padding: 55px 0;
+	background: rgba(255,255,255, 0.3);
+}
+.cta-block p {
+	font-size: 18px;
+	color: #313131;
+	text-align: center;
+}
+.cta-block h5 {
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+}
+.cta-block .btn.btn-info {
+	background: #3398db;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #fff;
+	letter-spacing: 2px;
+	width: 300px;
+	display: block;
+	border-bottom: 3px solid #2672A4;
+	margin: 45px auto 0;
+}
+
+
+/**********
+FORM
+***********/
+.form {
+	padding: 25px 0 45px;
+	background: #237cc6;
+}
+.form h3 {
+	font-size: 24px;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 20px 0;
+}
+.form p {
+	font-size: 18px;
+	color: #fff;
+	text-align: center;
+}
+.form .btn.btn-default {
+	background: #fff;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #3398DB;
+	letter-spacing: 2px;
+	width: 300px;
+	display: block;
+	border-bottom: 3px solid #bfbfbf;
+	margin: 45px auto 0;
+}
 
 
 /**********
@@ -99,5 +262,8 @@ MEDIA QUERIES
 	header h1 {
 		padding: 35px 0 20px;
 		font-size: 20px;
+	}
+	* {
+		text-align: center;
 	}
 }
