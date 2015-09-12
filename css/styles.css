@@ -1,5 +1,31 @@
 body {
-	background: #e5e8e6;
+	background: url('../img/top_header.png') no-repeat center top;
+	background-size: 100% auto;
+	background-color: #e5e8e6;
+}
+header {
+	padding: 65px 0 35px;
+}
+header h1 {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 8px;
+	font-weight: lighter;
+	padding: 70px 0 30px;
+	font-size: 30px;
+}
+header h1:after {
+	content: "Prueba Coordinate Antes Que Nadie"
+	box-shadow: 0 4px 2px -2px rgba(0,0,0,0.4)
+}
+header h1>span {
+	background: -webkit-linear-gradient(0deg, #ef4123, #f1d736);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+	color: #f0892c;
+	font-weight: 200;
 }
 header img {
 	margin: 0 auto;
@@ -9,5 +35,69 @@ header h1 {
 }
 
 .intro {
+	padding: 20px 0;
 	text-align: center;
+}
+.intro h2 {
+	font-size: 24px;
+	color: #237cc6;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	padding: 10px 0;
+}
+.intro p,
+.intro ul {
+	color: #313131;
+	font-size: 18px;
+}
+.intro p>span {
+	color: #225789;
+	font-weight: bold;
+}
+.intro ul {
+	list-style: none;
+}
+.intro .left-intro h3,
+.intro .right-intro h3 {
+	font-size: 18px;
+	color: #237cc6;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+.intro .right-intro ul {
+	font-size: 14px;
+}
+
+.cta {
+	padding: 45px 0;
+}
+.cta .btn.btn-info {
+	background: #3398db;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #fff;
+	letter-spacing: 2px;
+	margin: 0 auto;
+	width: 300px;
+	display: block;
+	border-bottom: 3px solid #2672A4;
+}
+
+
+
+/**********
+MEDIA QUERIES
+***********/
+
+@media screen and (max-width: 768px) {
+	body {
+		background-size: auto 15%;
+	}
+	header {
+		padding: 30px 0;
+	}
+	header h1 {
+		padding: 35px 0 20px;
+		font-size: 20px;
+	}
 }
