@@ -28,7 +28,7 @@
 						<br />Pero necesitamos de tu ayuda para ofrecerte la mejor experiencia en Gestión de Proyectos para ti y tu equipo.</p>
 						<p>Queremos validar un par de cosas dentro del desarrollo que estamos haciendo:</p>
 						<ul>
-							<li>● Una <a href="">metodología de 4 pasos</a> para crear proyectos.</li>
+							<li>● Una <a href="#" id="go_methodology_1">metodología de 4 pasos</a> para crear proyectos.</li>
 							<li>● Las funcionalidades que va a facilitar la manera en la que coordinas proyectos en equipo.</li>
 						</ul>
 						<p><b>¿Nos ayudas?</b> A continuación te decimos cómo.</p>
@@ -36,15 +36,15 @@
 					<div class="col-md-6 left-intro">
 						<h3>¿Cómo puedes ayudarnos?</h3>
 						<ol>
-							<li>Entra a nuestra plataforma con el acceso que te fue enviado por correo. ¿Aún no tienes tu acceso? <a href=""> Regístrate aquí</a>.</li>
-							<li>Crea un proyecto siguiendo los pasos de nuestra metodología. Puedes saber más al respecto <a href="">aquí</a>.</li>
-							<li>Queremos conocer tus opiniones, cuéntanos que te pareció la experiencia en la <a href="">encuesta</a> que está al <a href="">final de esta página</a>.</li>
+							<li>Entra a nuestra plataforma con el acceso que te fue enviado por correo. ¿Aún no tienes tu acceso? <a href="http://54.191.173.64:8080/" target="_blank"> Regístrate aquí</a>.</li>
+							<li>Crea un proyecto siguiendo los pasos de nuestra metodología. Puedes saber más al respecto <a href="#" id="go_methodology_2">aquí</a>.</li>
+							<li>Queremos conocer tus opiniones, cuéntanos que te pareció la experiencia en la <a href="https://goo.gl/L8wbrj" target="_blank">encuesta</a> que está al <a href="#" id="go_down">final de esta página</a>.</li>
 						</ol>
 					</div>
 					<div class="col-md-6 right-intro">
 						<h3>Puntos a considerar</h3>
 						<ul>
-							<li>● Tu perfil y el de tu equipo están predefinidos de momento, ya que solo es una prueba. <a href="">Conócelos aquí</a>.</li>
+							<li>● Tu perfil y el de tu equipo están predefinidos de momento, ya que solo es una prueba. <a href="#" id="go_team">Conócelos aquí</a>.</li>
 							<li>● Dentro de la plataforma encontrarás un proyecto previamente creado que te servirá de guía.</li>
 							<li>● La plataforma aún no está desarrollada al 100%, así que aún no podrás usar todas las funcionalidades.</li>
 						</ul>
@@ -56,12 +56,12 @@
 		<section class="cta">
 			<div class="container">
 				<div class="row">
-					<a class="btn btn-info">Inicia tu prueba ahora</a>	
+					<a href="http://54.191.173.64:8080/" target="_blank" class="btn btn-info">Inicia tu prueba ahora</a>	
 				</div>
 			</div>
 		</section>
 
-		<section class="methodology">
+		<section id="methodology" class="methodology">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 col-md-offset-3">
@@ -96,7 +96,7 @@
 			</div>
 		</section>
 
-		<section class="team">
+		<section id="team" class="team">
 			<div class="container">
 				<div class="row">
 					<h3>Conoce a tu equipo</h3>
@@ -140,19 +140,19 @@
 					<p>Creemos que con estos recursos, facilitaremos tu prueba.
 					<br />Si tienes dudas, comunícate con nosotros mediante el chat que está abajo.</p>
 					<h5>¿Listo para iniciar?</h5>
-					<a href="" class="btn btn-info">Inicia tu prueba ahora</a>
+					<a href="http://54.191.173.64:8080/" target="_blank" class="btn btn-info">Inicia tu prueba ahora</a>
 				</div>
 			</div>
 		</section>
 
-		<section class="form">
+		<section id="last_form" class="form">
 			<div class="container">
 				<div class="row">
 					<h3>¿Concluiste tu prueba?</h3>
 					<p>Si ya concluiste tu prueba, por favor llena la siguiente encuesta.
 					<br />Queremos saber tus opiniones, sólo así podemos ofrecerte una mejor herramienta.</p>
 					<p><b>Y de nuevo, ¡muchas gracias por tu ayuda!</b></p>
-					<a href="" class="btn btn-default">Llenar Encuesta</a>
+					<a href="https://goo.gl/L8wbrj" target="_blank" class="btn btn-default">Llenar Encuesta</a>
 				</div>
 			</div>
 		</section>
@@ -161,6 +161,28 @@
 		<!-- jQuery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#go_down").click(function(e){
+					e.preventDefault();
+					$("body").stop().animate({scrollTop:$("#last_form").offset().top}, '1000', 'swing');
+				});
+
+				$("#go_team").click(function(e){
+					e.preventDefault();
+					$("body").stop().animate({scrollTop:$("#team").offset().top}, '1000', 'swing');
+				});
+
+				$("#go_methodology_1, #go_methodology_2").click(function(e){
+					e.preventDefault();
+					$("body").stop().animate({scrollTop:$("#methodology").offset().top}, '1000', 'swing');
+				});
+			});
+			/*var body = $("html, body");
+			body.stop().animate({scrollTop:0}, '500', 'swing', function() { 
+			   alert("Finished animating");
+			});*/
+		</script>
 	</body>
 
 </html>
